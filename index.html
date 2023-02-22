@@ -8,19 +8,38 @@
     <title>Apointment Keeper</title>
 </head>
 <body>
-    <h1>Apointment Keeper</h1>
-    <div class="timer">
-        <h2 id="hour">0</h2>
-        <h2 id="mins">0</h2>
-        <h2 id="secs">0</h2>
-        <p>Timer</p>
-    </div>
-    <div class="setAppoint">
-        <label for="description">Description</label>
-        <input type="text" id="description">
-        <label for="desc-time">Time</label>
-        <input type="text" id="desc-time">
-    </div>
+    <main>
+        <h1>Appointment Keeper</h1>
+        <div class="timer">
+            <h2 id="hour">0</h2>
+            <h2 id="mins">0</h2>
+            <h2 id="secs">0</h2>
+            <p>Time to next Appointment</p>
+        </div>
+        <div class="setAppoint">
+            <div class="appt-input">
+                <label for="description">Description</label>
+                <input type="text" id="description">
+                <label for="start-time">Start Time</label>
+                <input type="time" id="start-time" name="start-time" value="08:00:00">
+                <label for="end-time">End Time</label>
+                <input type="text" id="end-time">
+            </div>
+            <div class="appt-btn">
+                <button id="save">Save</button>
+                <button id="reset">Reset</button>
+            </div>
+            <p id="testp"></p>
+        </div>
+        <div class="day-appts">
+            <h3>Days Appointments</h3>
+            <p>Description</p>
+            <p>Starts</p>
+            <p>Ends</p>
+            <p>Duration</p>
+            <button id="edit">Edit</button>
+        </div>
+    </main>
     <script src="index.js"></script>
 </body>
 </html>
